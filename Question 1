@@ -1,0 +1,58 @@
+package LabTest;
+import java.util.Scanner;
+public class LabTest1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner(System.in);
+		
+		int item, item1, item2, item3, price1, price2, price3;
+		double total1, total2, total3, totalprice, discount, totalpay;
+		
+		System.out.print("Enter the number of items: ");
+		item = input.nextInt();
+		System.out.print("Enter price of first item: RM");
+		price1 = input.nextInt();
+		System.out.print("Enter quantity of first item: ");
+		item1 = input.nextInt();
+		System.out.println();
+		System.out.print("Enter price of second item: RM");
+		price2 = input.nextInt();
+		System.out.print("Enter quantity of second item: ");
+		item2 = input.nextInt();
+		System.out.println();
+		System.out.print("Enter price of third item: RM");
+		price3 = input.nextInt();
+		System.out.print("Enter quantity of third item: ");
+		item3 = input.nextInt();
+		System.out.println();
+		
+		total1 = item1 * price1;
+		total2 = item2 * price2;
+		total3 = item3 * price3;
+		
+		totalprice = total1 + total2 + total3;
+		
+		System.out.printf("Total price: RM%.2f" , totalprice); 
+		
+		if(totalprice > 100) {
+			discount = 0.2 * totalprice;
+		}
+		
+		else {
+			discount = 0.1 * totalprice;
+		}
+		
+		System.out.printf("\nDiscount received: RM%.2f" , discount);
+		
+		totalpay = totalprice - discount;
+		
+		System.out.printf("\nPrice to paid : RM%.2f" , totalpay);
+		
+		
+		
+
+	}
+
+}
