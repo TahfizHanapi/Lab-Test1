@@ -50,7 +50,7 @@ public class LabTest1 {
 		
 		System.out.printf("\nPrice to paid : RM%.2f" , totalpay);
 		
-		
+		input.close();
 		
 
 	}
