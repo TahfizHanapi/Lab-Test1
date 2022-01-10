@@ -13,7 +13,7 @@ public class Question2 {
 		
 		System.out.print("Enter sales        : RM");
 		salesgen = in.nextDouble();
-		System.out.print("Enter hours worked : RM");
+		System.out.print("Enter hours worked : ");
 		hour = in.nextInt();
 		
 		if (salesgen >= 150 && salesgen <= 300) {
@@ -36,7 +36,7 @@ public class Question2 {
 		
 		System.out.printf("\nDaily wages       : RM%.2f" , dailywage);
 			
-		in.close();		
+		in.close();
 
 	}
 
